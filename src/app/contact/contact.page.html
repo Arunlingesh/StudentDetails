@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Contact</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h4>Address : </h4>
+  <p style="margin-left:10%;">Dharani Nagar - Thalayanai Road,<br> Athuvazhi Post,<br> Sivagiri Taluk, <br>Vasudevanallur -  Pin-627760,<br> Tirunelveli, Tamilnadu.</p>
+  <ion-button id="email" color="success">Email-id</ion-button>
+<ion-popover trigger="email" triggerAction="click">
+  <ng-template>
+    <ion-content class="ion-padding">dharani.dmhss@gmail.com</ion-content>
+  </ng-template>
+</ion-popover>
+
+<ion-button id="contact" color="success">Contact</ion-button>
+<ion-popover trigger="contact" triggerAction="click">
+  <ng-template>
+    <ion-content class="ion-padding">0436-241649</ion-content>
+  </ng-template>
+</ion-popover>
+<br><br>
+<!-- <ion-datetime></ion-datetime> -->
+
+</ion-content>
+<ion-fab horizontal="end" vertical="center" slot="fixed">
+  <ion-fab-button color="danger">
+    <ion-icon name="mail-open-outline">Dharani.international@gmail.com</ion-icon>
+  </ion-fab-button>
+</ion-fab>
+

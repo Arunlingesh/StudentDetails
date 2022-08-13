@@ -1,0 +1,97 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      HOME
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  
+
+
+<ion-content [fullscreen]="true">
+  <h1 style="color:rgb(255, 0, 242) ; font: size 30px;text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Welcome To Dharani International School</h1>
+  <br><br><br>
+  <img src="assets/School-pic1.jpg" alt="CoverImage" width="100%" height="auto">
+  <br>
+  <hr>
+  <ion-accordion-group>
+    <ion-accordion value="first">
+      <ion-item slot="header" color="light">
+        <ion-label>VISION</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        We aim to be Earth’s most customer centric company. Our mission is to continually raise the bar of the customer experience by using the internet and technology to help consumers find, discover and buy anything, and empower businesses and content creators to maximise their success.
+      </div>
+    </ion-accordion>
+    <ion-accordion value="second">
+      <ion-item slot="header" color="light">
+        <ion-label>MISSION</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        To entertain, inform and inspire people around the globe through the power of unparalleled storytelling, reflecting the iconic brands, creative minds and innovative technologies that make ours the world’s premier entertainment company.
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+  <br>
+  <hr>
+
+  
+  
+  <div>
+    <ion-button (click)="registration()" color="success" >Register Here</ion-button>
+    <ion-button (click)="studentdetails()" color="success" >Student Details</ion-button>
+  </div>
+
+  
+  <br><br><br>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Top Scorer</ion-card-subtitle>
+      <ion-card-title>12 th</ion-card-title>
+    </ion-card-header>
+     <ion-card-content>
+      <img src="./assets/Student-pic.jpg" alt="StudentImage" width="20%" height="150px">
+   
+      <br>1189/1200<br>
+      Right School for Holistic Education
+     </ion-card-content>
+  </ion-card>
+  <br><br><br>
+  <h2 style="color:brown;">Records :</h2>
+  <ion-list>
+    <ion-item>
+      <ion-label>State Rank Holders</ion-label>
+      <ion-badge color="success">22</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>District Rank Holders</ion-label>
+      <ion-badge color="secondary">118</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Centum in Maths</ion-label>
+      <ion-badge color="tertiary">34k</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Pass Perchentage</ion-label>
+      <ion-badge color="success">100%</ion-badge>
+    </ion-item>
+    
+  </ion-list>
+  
+</ion-content>
+
+
+
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>
+      <ul>
+        <li style="list-style-type:none ;"><a  style="text-decoration:none; color: blue; font-size:small;" href="contact"><ion-icon name="call-outline"></ion-icon> Contact US</a></li>
+      </ul>
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
+

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title >Students List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list *ngIf = "friends">
+ 
+  <ion-item *ngFor = "let friend of datalist ">
+    <ion-label >
+      <h1 style="color:blue ; font-size:20px;"> {{friend.name}}  </h1>
+      <br>
+      <h4>My name {{friend.name}}</h4>
+      <h5>Age : {{friend.age}} </h5>
+      <p> Quotes : {{ friend.about }}</p>
+    </ion-label>
+  </ion-item>
+</ion-list>
+
+<ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+  <ion-infinite-scroll-content
+    loadingSpinner="bubbles"
+    loadingText="Loading more data...">
+  </ion-infinite-scroll-content>
+</ion-infinite-scroll>
+
+</ion-content>
+
